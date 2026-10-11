@@ -1,0 +1,29 @@
+# Environment and secrets
+.env
+*.env.local
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# User uploads & outputs
+uploads/*
+!uploads/.gitkeep
+results.json
+recon_report_*.json
+*.log
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
