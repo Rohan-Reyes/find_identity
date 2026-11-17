@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find Identity</title>
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/app.css?v={{v}}">
+  <script type="module" src="/static/app.js?v={{v}}"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <img src="/static/icon.svg" alt="" width="28" height="28">
+      <span>Find Identity</span>
+    </a>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#/" data-nav="scan">New scan</a>
+      <a href="#/history" data-nav="history">History</a>
+      <a href="#/tools" data-nav="tools">Image tools</a>
+      <a href="#/platforms" data-nav="platforms">Platforms</a>
+    </nav>
+    <button class="icon-btn" id="theme" type="button" title="Switch theme" aria-label="Switch theme"></button>
+  </header>
+  <main id="view" tabindex="-1"></main>
+  <div id="toasts" role="status" aria-live="polite"></div>
+  <footer class="foot">Find Identity <span id="version"></span> · Public data only · Respect each site's terms</footer>
+</body>
+</html>
