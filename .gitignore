@@ -1,25 +1,23 @@
-# Environment and secrets
+# Secrets
 .env
 *.env.local
 
-# Python bytecode & cache
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.pytest_cache/
-
-# User uploads & outputs
-uploads/*
-!uploads/.gitkeep
+# Reports, thumbnails and CLI output stay on your computer
+data/
+uploads/
 results.json
 recon_report_*.json
-*.log
+find-identity-*.*
+*-clean.jpg
+*-clean.png
+*-clean.webp
 
-# Virtual environments
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
 .venv/
 venv/
-ENV/
 env/
 
 # IDE & OS
@@ -27,3 +25,4 @@ env/
 .idea/
 .DS_Store
 Thumbs.db
+desktop.ini
